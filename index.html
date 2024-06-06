@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <h1>Stopwatch</h1>
+    <div class="stopwatch">
+      <div class="watch">
+        <p class="p-in" id="hour">00</p>
+        <p class="p-in">:</p>
+        <p class="p-in" id="minute">00</p>
+        <p class="p-in">:</p>
+        <p class="p-in" id="sec">00</p>
+        <p class="p-in">.</p>
+        <p class="p-in" id="count">00</p>
+      </div>
+    </div>
+    <div class="buttons">
+      <button id="restart" style="color: white; visibility: hidden"><i class="fa-solid fa-rotate fa-3x"></i></button>
+      <button id="lap" style="color: white;"><i class="fa-solid fa-flag fa-3x"></i></button>
+      <button id="start"><i class="fa-solid fa-play" style="height: 3px; width: 3px; color: white;"></i></button>
+      <button id="stop" style="display: none;"><i class="fa-solid fa-pause" style="color: white; height: 3px; width: 3px;"></i></button>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
